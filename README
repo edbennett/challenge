@@ -14,7 +14,9 @@ Run
     bin/calc_fractal.py 6 sextic.dat
 to generate the sextic data, then run `fig3.py`.
 
-Run
+Download the Pakistan biomass field survey (from the World Bank) by running
+    curl -L -o data/survey.csv https://energydata.info/dataset/a27a9b60-706b-4c81-8608-c913d2ed998f/resource/fdef4f22-fe57-49b1-9c42-e5dac79cc90c/download/pakistanbiomassfieldsurvey.csv
+then run
     jupyter nbconvert --to notebook --execute bin/maizeexports.ipynb
 to generate plots of maize exports by country and farm subsidies by
 crop area in the USA.
