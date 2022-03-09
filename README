@@ -2,12 +2,22 @@
 
 To run this analysis, you'll need Numpy and Matplotlib.
 
-Run `calc_fractal.py` to generate the data, then run `fig1.py`.
+Run 
+    bin/calc_fractal.py 3 cubic.dat
+to generate the cubic data, then run `fig1.py`.
 
-Then change `calc_fractal.py` to be order 5 and 6 polynomials and
-repeat for figures 2 and 3.
+Run 
+    bin/calc_fractal.py 5 quintic.dat
+to generate the quintic data, then run `fig2.py`.
 
-Finally, run `fig4.py` to get the bar plot for figure 4.
+Run 
+    bin/calc_fractal.py 6 sextic.dat
+to generate the sextic data, then run `fig3.py`.
+
+Run
+    jupyter nbconvert --to notebook --execute bin/maizeexports.ipynb
+to generate plots of maize exports by country and farm subsidies by
+crop area in the USA.
 
 Replace `secret_key.dat` with your own secret key to be able to run
 on your cloud account.
